@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts and Booking | Yuzu Kitchen</title>
+    <title>Contacts and Booking - Yuzu Kitchen</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=BJCree:wght@400;500;600;700&family=Nothing+You+Could+Do&family=Rampart+One&display=swap" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -29,55 +29,54 @@
         </nav>
     </header>
 
-    <main class="booking-block">
+    <main class="contact-main">
+        <img src="https://platform.dc.eater.com/wp-content/uploads/sites/9/chorus/uploads/chorus_asset/file/23236343/D85_0431_HDR.jpeg" alt="Blurred view of Yuzu Kitchen dining hall" class="contact-bg-img">
 
-        <h2>Book a Table</h2>
-        
-        <p>Please fill the form below, and our manager will contact you to confirm the booking.</p>
-
-       
-        <form id="contact-form" action="#" method="POST">
-            
-            <div class="form-group">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" class="form-control" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" class="form-control" required>
-            </div>
-
-            <div class="form-group">
-                <label for="hall">Choose Hall: </label>
-                <select id="hall" name="hall" class="form-control">
-                    <option value="main">Main Hall</option>
-                    <option value="terrace">Summer-Terrace</option>
-                    <option value="vip">VIP-Room</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label>Table Type:</label><br>
-                <input type="radio" id="table2" name="table_type" value="2_persons" checked>
-                <label for="table2" style="display:inline; font-weight:normal;">For Two</label><br>
+        <div class="booking-block">
+            <h2>Book a Table</h2>
+            <p style="text-align: center;">Please fill the form below, and our manager will contact you to confirm the booking.</p>
+           
+            <form id="contact-form" action="#" method="POST">
                 
-                <input type="radio" id="table4" name="table_type" value="4_persons">
-                <label for="table4" style="display:inline; font-weight:normal;">For four</label><br>
-                
-                <input type="radio" id="tableLarge" name="table_type" value="large">
-                <label for="tableLarge" style="display:inline; font-weight:normal;">For Big Company</label>
-            </div>
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
 
-            <div class="form-group">
-                <label for="message">Your Requests</label>
-                <textarea id="message" name="message" rows="4" class="form-control" placeholder="For example: Allergies, Kids Table and ETC...."></textarea>
-            </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
 
-            <button type="submit" class="submit-btn">Submit Request</button>
-            
-        </form>
+                <div class="form-group">
+                    <label for="hall">Choose Hall: </label>
+                    <select id="hall" name="hall" class="form-control">
+                        <option value="main">Main Hall</option>
+                        <option value="terrace">Summer-Terrace</option>
+                        <option value="vip">VIP-Room</option>
+                    </select>
+                </div>
 
+                <div class="form-group">
+                    <label>Table Type:</label><br>
+                    <input type="radio" id="table2" name="table_type" value="2_persons" checked>
+                    <label for="table2" style="display:inline; font-weight:normal;">For Two</label><br>
+                    
+                    <input type="radio" id="table4" name="table_type" value="4_persons">
+                    <label for="table4" style="display:inline; font-weight:normal;">For four</label><br>
+                    
+                    <input type="radio" id="tableLarge" name="table_type" value="large">
+                    <label for="tableLarge" style="display:inline; font-weight:normal;">For Big Company</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Requests</label>
+                    <textarea id="message" name="message" rows="4" class="form-control" placeholder="For example: Allergies, Kids Table and ETC...."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn" style="width: 100%;">Submit Request</button>
+            </form>
+        </div>
     </main>
 
     
