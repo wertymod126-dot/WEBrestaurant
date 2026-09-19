@@ -61,13 +61,16 @@ main {
 
 /* Header and navbar */
 #main-header {
+  display: flex;
+  
   position: sticky;
   top: 0;
   z-index: 1000;
+
   background-color: var(--color-sand);
-  display: flex;
   justify-content: space-between;
   align-items: center;
+  
   padding: 15px 30px;
   height: 85px;
   box-shadow: 0 2px 10px rgba(43, 32, 22, 0.1);
